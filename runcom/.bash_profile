@@ -1,4 +1,4 @@
-for DOTFILE in `find /Users/dennis/Projects/.dotfiles`
+for DOTFILE in `find ~/.dotfiles`
 do
   [ -f “$DOTFILE” ] && source “$DOTFILE”
 done
