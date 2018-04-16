@@ -1,10 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+cd ~/.dotfiles
 
-git pull origin master;
-
-function doIt() {
+function syncFiles() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude "bootstrap.sh" \
@@ -14,5 +12,5 @@ function doIt() {
 	source ~/.bash_profile;
 }
 
-doIt;
-unset doIt;
+syncFiles;
+unset syncFiles;

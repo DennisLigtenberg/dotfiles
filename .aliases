@@ -1,0 +1,12 @@
+# Make em runnable with sudo
+alias sudo="sudo "
+
+alias l="ls -la"
+alias ld="ls -ld */"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+
+alias di="dnf install"
