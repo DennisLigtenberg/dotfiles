@@ -16,3 +16,9 @@ source ~/.aliases
 
 # Agnoster theme
 source ~/agnoster.zsh-theme
+
+# Complete aliases
+setopt completealiases
+
+# Autocomplete case insensitive
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'

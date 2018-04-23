@@ -12,5 +12,7 @@ function syncFiles() {
 	source ~/.bash_profile;
 }
 
+# Disable Gnome screenshot shortcut
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot 'Disabled'
 syncFiles;
 unset syncFiles;
